@@ -1,0 +1,85 @@
+nav {
+    color: black;
+    background-color: gold;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 50px;
+    vertical-align: middle;
+}
+
+header {
+    background-color: lightyellow;
+    color: #c2c02b;
+    padding: 10px;
+    text-align: center;
+}
+
+body {
+    font-size: 12px;
+    margin: 20px;
+    background-color: beige;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h1 {
+    font-size: 4rem;
+    font-style: bold;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.card-container {
+    display: inline-block;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.browse-card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0 0 150px;
+    background-color: #FFF8A7;
+    max-width: 100%;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #7A784B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+footer {
+    color: white;
+    background-color: #3e1305;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.25;
+}
+
+footer p:last-child {
+    padding-top: 8px;
+}
