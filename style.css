@@ -16,6 +16,25 @@ nav li {
     vertical-align: middle;
 }
 
+nav li.title {
+    font-size: 48px;
+    font: Helvetica;
+}
+
+nav button {
+    background-color: rgb(231, 179, 47);
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+nav img {
+    height: 60px;
+    width: 60px;
+    display: block;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
 header {
     background-color: lightyellow;
     color: #c2c02b;
@@ -24,7 +43,7 @@ header {
 }
 
 body {
-    font-size: 12px;
+    font-size: 20px;
     margin: 20px;
     background-color: beige;
     font-family: 'Times New Roman', Times, serif;
@@ -33,11 +52,12 @@ body {
 
 h1 {
     font-size: 4rem;
-    font-style: bold;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    font-weight: bold;
 }
 
 .card-container {
@@ -46,6 +66,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
+    width: 100%;
 }
 
 .browse-card {
@@ -82,4 +103,24 @@ footer p {
 
 footer p:last-child {
     padding-top: 8px;
+}
+
+@media (min-width: 900px) {
+
+    .browse-card {
+        display: inline-block;
+        flex-direction: row-reverse;
+        width: 31%;
+        height: 300px;
+        color: purple;
+        margin-left: 1%;
+        text-align: center;
+    }
+
+    .card-container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
 }
