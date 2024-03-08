@@ -2,7 +2,7 @@ nav {
     color: black;
     background-color: gold;
     border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
 }
 
 nav ul {
@@ -27,7 +27,7 @@ nav button {
     border-radius: 10px;
 }
 
-nav img {
+.imgnav {
     height: 60px;
     width: 60px;
     display: block;
@@ -48,6 +48,32 @@ body {
     background-color: beige;
     font-family: 'Times New Roman', Times, serif;
 
+}
+
+.text-container {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.home {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.float-left {
+    float: left;
+    margin: 0 20px 0 20px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 h1 {
@@ -85,6 +111,11 @@ h2 {
     position: relative;
 }
 
+.browse-card p {
+    font-size: 16px;
+    padding: 10px;
+}
+
 footer {
     color: white;
     background-color: #3e1305;
@@ -111,16 +142,26 @@ footer p:last-child {
         display: inline-block;
         flex-direction: row-reverse;
         width: 31%;
-        height: 300px;
-        color: purple;
+        height: 100%;
         margin-left: 1%;
         text-align: center;
     }
 
     .card-container {
         width: 100%;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
 
+    }
+
+    .text-container img {
+        max-height: 400px;
+        max-width: 400px;
+    }
+
+    img.home {
+        max-width: 300px;
+        max-height: 300px;
     }
 }
